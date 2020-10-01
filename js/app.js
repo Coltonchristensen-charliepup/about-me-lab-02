@@ -15,15 +15,22 @@ if (homeLocation === 'yes' || homeLocation === 'y') {
 
 // Colton - Question 3!:
 var favoriteBeer = prompt('Do I like hazy beers?');
-var normalizedFavoritebeer = favoriteBeer.toLocaleLowerCase
+var normalizedFavoritebeer = favoriteBeer.toLocaleLowerCase();
 if(favoriteBeer === 'yes' || favoriteBeer === 'y')
 //console.log('Yes! I like hazy beers');
 alert('Yes! I like hazy beers');
 
 // Colton - Question 4!:
 var animalName = prompt('Is my dogs name Chanko?');
-var normalizAnimalName = animalName.toLocaleLowerCase
+var normalizAnimalName = animalName.toLocaleLowerCase();
 if(animalName === 'no' || animalName === 'n');
 //console.log('No! That is not his name!');
-alert('No! That is not name!');
+alert('No! That is not his name!');
 //alert('It is Nice to meet you ' + name + ', ' + homeLocation + ' Is a great place to hail from! ' + favoriteBeer + ' is a great choice' + ',' + ' i hope ' + animalName + ' is well behaved!'); 
+
+// Colton - Question 5!:
+var dragRacing = prompt('Do I drag race?');
+var normalizedDragRace = dragRace.toLocaleLowerCase();
+if(dragRace === 'Yes' || dragRace === 'y');
+//console.log('Yes! I love drag racing!');
+alert('Yes! I love drag racing!');
