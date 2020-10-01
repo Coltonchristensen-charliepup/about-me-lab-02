@@ -1,6 +1,10 @@
 body {
-background-color: darkgreen;
+  background-color: blueviolet;
 }
+  p{
+padding: 10px;
+}
+
 
 
 h1 {
@@ -8,3 +12,8 @@ h1 {
   font-size: large;
   font-weight: bold;
 }
+
+#first-paragraph { 
+  background-color: crimson;
+}
+
