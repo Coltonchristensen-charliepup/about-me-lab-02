@@ -1,4 +1,5 @@
 'use strict';
+
 function validUserInput(value){
   //var valueLowerCase = value.toLowerCase();
   return (yesValue(value) || noValue(value)); 
