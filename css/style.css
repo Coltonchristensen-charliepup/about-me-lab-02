@@ -1,9 +1,10 @@
 body {
-  background-color: blueviolet;
+  background-color: green;
 }
   p{
 padding: 10px;
 }
+
 
 
 
@@ -13,7 +14,23 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  background-color: orangered;
+}
 #first-paragraph { 
   background-color: crimson;
 }
 
+p {
+  background-color: paleturquoise;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 25px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 25px;
+}
