@@ -85,7 +85,7 @@ while (countyGuesses < 6 ){
     alert('try again, ' + userName + ', try agian') 
   } else if(numberOfCounties < 3){
     alert('try again, ' + userName + ', try again')
-  } else if (numberOfCounties === '3'){
+  } else if (numberOfCounties === 3){
     correctAnswer++;
     break;
   }
@@ -94,25 +94,28 @@ while (countyGuesses < 6 ){
 
 // colton- Question 7!:
 
-console.log(numberOfTurbos);
-var turboGuesses = 0;
+console.log(numberOfDogsInMyHouse);
+var attempts = 0;
 
-while(turboGuesses < 12 ){
-  
-  var numberOfTurbos = prompt('How many turbos does my truck have? Answer the correct number');
-  if (isNaN(numberOfTurbos)){
-    alert('enter a number');
-    continue
-  }
-  if (numberOfTurbos > 2){
-    alert('try again, ' + userName + ', try again')
-  }else if(numberOfTurbos < 2){
-    alert('try again, ' + userName + ', try again')
-  }else if(numberOfTurbos === '2'){
+while(attempts < 6){
+  attempts++;
+  var numberOfDogsInMyHouse = prompt('How many dogs are in my house? Enter the correct number!').toUpperCase();
+  if (isNaN(numberOfDogsInMyHouse)){
+    alert('enter a number!');
+  }else if (numberOfDogsInMyHouse > 3){
+    alert('try again, ' + userName + ' try again')
+  }else if(numberOfDogsInMyHouse < 2){
+    alert('again, ' + userName + ', try again')
+  }else if ('correct, ' + numberOfDogsInMyHouse === 2){
     correctAnswer++;
-    break;
+  break
+  } else if (numberOfDogsInMyHouse === 6){
+    alert('You are out guesses, ' + userName + '.  Click okay to finish.');
   }
 }
+  
+
+
 
 
 alert('Thanks for playing ' + userName + '!');
