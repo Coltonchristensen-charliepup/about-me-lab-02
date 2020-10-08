@@ -26,7 +26,7 @@ function getUserInput(question) {
     return getUserInput(question);
 }
 // Colton - Question 1!;
-function questionOne();
+function questionOne(){
 var userName = prompt('What is your name?!');
 //console.log('userName: ', userName);
 var myName = getUserInput('Is my name Colton?');
@@ -35,7 +35,6 @@ if (yesValue(myName)) {
     //console.log('Hi ' + myName);
     alert('Yes, that is my name');
 }
-questionOne
 
 // Colton - Question 2!:
 var homeLocation = getUserInput('Am i from washington');
@@ -98,35 +97,32 @@ while (countyGuesses < 6) {
 
 // colton- Question 7!:
 // he is still working on this question
-var attempts = 0;
-console.log(nameOfDogsInMyHouse);
+// var attempts = 0;
+// console.log(nameOfDogsInMyHouse);
 
-while (attempts < 6) {
-    attempts++;
-    var nameOfDogsInMyHouse = prompt('what are the names of the dogs in my house? Enter the correct name!').toUpperCase();
-    if (nameOfDogsInMyHouse === array[0] || nameOfDogsInMyHouse === array[1]) {
-        alert('Correct, ' + userName + ', names of dogs are Ganon and Charlie!');
-    }
-    attempts = 6;
-    correctAnser++;
-    break;
-}
-if (nameOfDogsInMyHouse !== array[0] || nameOfDogsInMyHouse !== array[1]) {
-    alert('again, ' + userName + ', try again')
-    attempts++;
-}
-if (attempts === 6) {
-    alert('You are out guesses, ' + userName + '.  Click okay to finish.');
-}
+// while (attempts < 6) {
+    //     attempts++;
+    //     var nameOfDogsInMyHouse = prompt('what are the names of the dogs in my house? Enter the correct name!').toUpperCase();
+    //     if (nameOfDogsInMyHouse === array[0] || nameOfDogsInMyHouse === array[1]) {
+        //         alert('Correct, ' + userName + ', names of dogs are Ganon and Charlie!');
+//     }
+//     attempts = 6;
+//     correctAnser++;
+//     break;
 
-
-
-
-
+// if (nameOfDogsInMyHouse !== array[0] || nameOfDogsInMyHouse !== array[1]) {
+    //     alert('again, ' + userName + ', try again')
+    //     attempts++;
+// }
+// if (attempts === 6) {
+//     alert('You are out guesses, ' + userName + '.  Click okay to finish.');
+//     }
+// }
 
 alert('Thanks for playing ' + userName + '!');
-
+}
 // Thanks for playing userName!
 //alert(`Hi ${userName}, this is template literal!`);
 
 //still working on this question
+questionOne();
