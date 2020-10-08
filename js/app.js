@@ -95,23 +95,24 @@ while (countyGuesses < 6) {
 // colton- Question 7!:
 
 var attempts = 0;
-console.log(numberOfDogsInMyHouse);
+console.log(nameOfDogsInMyHouse);
 
 while (attempts < 6) {
   attempts++;
-  var numberOfDogsInMyHouse = prompt('How many dogs are in my house? Enter the correct number!').toUpperCase();
-  if (isNaN(numberOfDogsInMyHouse)) {
-    alert('enter a number!');
-  } else if (numberOfDogsInMyHouse > 3) {
-    alert('try again, ' + userName + ' try again')
-  } else if (numberOfDogsInMyHouse < 2) {
-    alert('again, ' + userName + ', try again')
-  } else if (numberOfDogsInMyHouse === '2') {
-    attempts = 6;
-  } else if (attempts === 6) {
-    alert('You are out guesses, ' + userName + '.  Click okay to finish.');
-  }
+  var nameOfDogsInMyHouse = prompt('what are the names of the dogs in my house? Enter the correct name!').toUpperCase();
+  if (nameOfDogsInMyHouse === array[0] || nameOfDogsInMyHouse === array[1]){
+    alert('Correct, ' + userName + ', names of dogs are Ganon and Charlie!');
+  } attempts = 6;
+  correctAnser++;
+  break;
+} if (nameOfDogsInMyHouse !== array[0] || nameOfDogsInMyHouse !== array[1]) {
+  alert('again, ' + userName + ', try again')
+  attempts++;
 }
+if (attempts === 6) {
+  alert('You are out guesses, ' + userName + '.  Click okay to finish.');
+  }
+
 
 
 
