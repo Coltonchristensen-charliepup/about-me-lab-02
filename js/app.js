@@ -1,4 +1,5 @@
 'use strict';
+var userName;
 
 function validUserInput(value) {
     //var valueLowerCase = value.toLowerCase();
@@ -27,7 +28,8 @@ function getUserInput(question) {
 }
 // Colton - Question 1!;
 function questionOne() { 
-    var userName = prompt('What is your name?!');
+    console.log(`question one`);
+    userName = prompt('What is your name?!');
     //console.log('userName: ', userName);
     var myName = getUserInput('Is my name Colton?');
     //console.log('myName', myName);
@@ -35,53 +37,60 @@ function questionOne() {
         //console.log('Hi ' + myName);
         alert('Yes, that is my name');
     }
-    questionOne();
 }    
+questionOne();
+
     // Colton - Question 2!:
 function questionTwo() {
-
+    console.log(`question two`);
     var homeLocation = getUserInput('Am i from washington');
     //console.log('homeLocation', homeLocation);
     if (yesValue(homeLocation)) {
         alert('Yes! I live in Washington');
         //console.log('Yes! I live in Washington')
     }
-    questionTwo();
 }
+questionTwo();
 
     // Colton - Question 3!:
 function questionThree() {
-
+    console.log(`question three`);
     var favoriteBeer = getUserInput('Do I like hazy beers?');
     //console.log('favoriteBeer',favoriteBeer);
     if (yesValue(favoriteBeer)) {
         //console.log('Yes! I like hazy beers');
         alert('Yes! I like hazy beers');
     }
-    questionThree();
 }    
+questionThree();
+
     // Colton - Question 4!:
 function questionFour() {
+    console.log(`question four`);
     var animalName = getUserInput('Is my dogs name Chanko?');
     //console.log('animalName', animalName);
     if (noValue(animalName)) {
         //console.log('No! That is not his name!');
         alert('No! That is not his name!');
     }
-    questionFour();
 }
+questionFour();
+
     // Colton - Question 5!:
     function questionfive() {
+        console.log(`question five`)
     var dragRace = getUserInput('Do I drag race?');
     //console.log('dragRace', dragRace);
     if (yesValue(dragRace)) {
         //console.log('Yes! I love drag racing!');
         alert('Yes! I love drag racing!');
     }
-    questionfive();
 }
+questionfive();
+
     // colton - Question 6!:
 function questionSix() {
+    console.log(`questions six`);
     var countyGuesses = 0;
     console.log(numberOfCounties);
 
@@ -104,36 +113,38 @@ function questionSix() {
         }
         countyGuesses++;
     }
-    questionSix();
 }
+questionSix();
+
     //colton- Question 7!:
     // he is still working on this question
 function questionSeven() {
+    console.log(`questions seven`);
     var attempts = 0;
-    var dogsArray = 0;
-    var correct = nameOfDogsInMyHouse
-    console.log(nameOfDogsInMyHouse);
+    var dogsArray = [`ganon` , `charlie`];
+    
+    console.log(dogsArray);
 
     while (attempts < 6) {
         attempts++;
-        var nameOfDogsInMyHouse = prompt('what are the names of the dogs in my house? Enter the correct name!').toUpperCase();
+        var nameOfDogsInMyHouse = prompt('what are the names of the dogs in my house? Enter the correct name!').toLowerCase();
         if (nameOfDogsInMyHouse === dogsArray[0] || nameOfDogsInMyHouse === dogsArray[1]) {
             alert('Correct, ' + userName + ', names of dogs are Ganon and Charlie!');
+            //correct++;
+            attempts = 6;
+            break;
         }
-        attempts = 6;
-        correct++;
-        break;
+        if (nameOfDogsInMyHouse !== dogsArray[0] || nameOfDogsInMyHouse !== dogsArray[1]) {
+            alert('try again, ' + userName + ', try again')
+            attempts++;
+            
+        }
+        if (nameOfDogsInMyHouse === dogsArray[0] || nameOfDogsInMyHouse === dogsArray[1]) {
+            alert('try again, ' + userName + ', try again')
+            attempts++;
+        }    
+        
     }
-    if (nameOfDogsInMyHouse !== dogsArray[0] || nameOfDogsInMyHouse !== dogsArray[1]) {
-        alert('try again, ' + userName + ', try again')
-        attempts++;
-
-    }
-    if (nameOfDogsInMyHouse === dogsArray[0] || nameOfDogsInMyHouse === dogsArray[1]) {
-        alert('try again, ' + userName + ', try again')
-        attempts++;
-    }    
-
     
     if (attempts === 6) {
         alert('You are out guesses, ' + userName + '.  Click okay to finish.');
@@ -141,8 +152,8 @@ function questionSeven() {
 
     alert('Thanks for playing ' + userName + '!');{
     }
-    questionSeven();
 }    
+questionSeven();
 
 // Thanks for playing userName!
 //alert(`Hi ${userName}, this is template literal!`);
